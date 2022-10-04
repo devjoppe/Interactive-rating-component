@@ -34,3 +34,17 @@ fieldset {
         color: $color-pure-white;
     }
 }
+
+.ratingnumber {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    .ratingnumber--score {
+        background: $color-dark-blue;
+        padding: 0 19px 0 19px;
+        border-radius: 22px;
+        p {
+            color: $color-orange;
+        }
+    }
+}

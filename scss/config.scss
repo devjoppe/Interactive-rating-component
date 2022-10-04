@@ -59,6 +59,10 @@ a {
     text-align: center;
 }
 
+.hide {
+    display: none !important;
+}
+
 // Radio
 input[type="radio"] {
     -webkit-appearance: none;
