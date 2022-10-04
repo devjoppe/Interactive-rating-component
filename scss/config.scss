@@ -47,11 +47,29 @@ p {
     @include font-size;
     color: $color-light-grey;
     line-height: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 a {
     text-decoration: none;
+}
+
+// Styling
+.center-text {
+    text-align: center;
+}
+
+// Radio
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #fff;
+    margin: 0;
+}
+
+input[type="radio"]:checked+label{
+    background: $color-orange;
+    color: $color-pure-white;
 }
 
 // Buttons
@@ -66,6 +84,11 @@ button {
     @include font-size;
     padding: 11px 0 11px 0;
     margin-top: 32px;
+    cursor: pointer;
+    &:hover {
+        background: $color-pure-white;
+        color: $color-orange;
+    }
 }
 
 .primary-background {

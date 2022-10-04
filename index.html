@@ -16,10 +16,10 @@
 
   <div class="container">
     <div class="component">
-      <div class="icons">
-        <img class="star-icon" src="images/icon-star.svg">
+      <div id="topimages" class="icons">
+        <img id="images" class="star-icon" src="images/icon-star.svg">
       </div>
-      <header>
+      <header id="title">
         <h1>How did we do?</h1>
       </header>
       <main>
@@ -30,13 +30,28 @@
           </p>
         </section>
         <section id="rating">
-          <div class="ratings">
-            <a href="#" id="1" class="ratinglink">1</a>
-            <a href="#" id="2" class="ratinglink">2</a>
-            <a href="#" id="3" class="ratinglink">3</a>
-            <a href="#" id="4" class="ratinglink">4</a>
-            <a href="#" id="5" class="ratinglink">5</a>
-          </div>
+          <fieldset id="ratingfields">
+            <div>
+              <input type="radio" class="radioval" id="1" name="valuefieldset" value="1">
+              <label class="ratinglink" for="1">1</label>
+            </div>
+            <div>
+              <input type="radio" class="radioval" id="2" name="valuefieldset" value="2">
+              <label class="ratinglink" for="2">2</label>
+            </div>
+            <div>
+              <input type="radio" class="radioval" id="3" name="valuefieldset" value="3">
+              <label class="ratinglink" for="3">3</label>
+            </div>
+            <div>
+              <input type="radio" class="radioval" id="4" name="valuefieldset" value="4">
+              <label class="ratinglink" for="4">4</label>
+            </div>
+            <div>
+              <input type="radio" class="radioval" id="5" name="valuefieldset" value="5">
+              <label class="ratinglink" for="5">5</label>
+            </div>
+          </fieldset>
           <button id="submitrating" class="primary-background">Submit</button>
         </section>
       </main>
@@ -73,5 +88,9 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/submit.js"></script>
+
 </body>
 </html>

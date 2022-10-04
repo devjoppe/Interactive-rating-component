@@ -9,12 +9,17 @@
 }
 
 //Ratings
-.ratings {
+fieldset {
+    border: 0;
     display: flex;
+    flex: 1;
+    padding: 0;
     justify-content: space-between;
 }
 
 .ratinglink {
+    @include font-size;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,4 +28,9 @@
     height: 51px;
     border-radius: 50%;
     color: $color-medium-grey;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-medium-grey;
+        color: $color-pure-white;
+    }
 }
