@@ -7,3 +7,20 @@
 .component {
     margin: 32px;
 }
+
+//Ratings
+.ratings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratinglink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-dark-blue;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    color: $color-medium-grey;
+}

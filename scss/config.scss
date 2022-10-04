@@ -17,6 +17,11 @@ $color-very-dark-blue: #131518;
     font-family: $font-primary;
 }
 
+//Mixins
+@mixin font-size {
+    font-size: 15px;
+}
+
 // Body
 body {
     display: flex;
@@ -39,9 +44,14 @@ h1 {
 }
 
 p {
-    font-size: 15px;
+    @include font-size;
     color: $color-light-grey;
     line-height: 24px;
+    margin-bottom: 24px;
+}
+
+a {
+    text-decoration: none;
 }
 
 // Buttons
@@ -53,8 +63,18 @@ button {
     height: 45px;
     font-weight: 700;
     letter-spacing: 2px;
+    @include font-size;
+    padding: 11px 0 11px 0;
+    margin-top: 32px;
 }
 
-.primary {
+.primary-background {
     background: $color-orange;
+}
+
+// Icons
+.star-icon {
+    background: $color-dark-blue;
+    padding: 16px;
+    border-radius: 50%;
 }
