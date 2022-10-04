@@ -48,3 +48,15 @@ fieldset {
         }
     }
 }
+
+// Reload page
+
+.reload_page {
+    margin-bottom: 32px;
+    a {
+        color: $color-light-grey;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

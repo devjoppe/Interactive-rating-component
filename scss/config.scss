@@ -27,12 +27,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background: $color-very-dark-blue;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;
     height: 100vh;
+}
+
+// Footer
+footer {
+    width: 412px;
+    margin-top: 56px;
+    p {
+        color: $color-medium-grey;
+        text-align: center;
+    }
+    a {
+        color: $color-light-grey;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 // Text
